@@ -17,6 +17,12 @@
 
 	.jgreen {
 		background-color: #18BC9C;
+		font-size: 12px;
+	}
+
+	.jRowGray {
+		background: linear-gradient(to left, #D8D8D8 , white); 
+		font-size: 12px;
 	}
 
 	.jumbotron {
@@ -32,6 +38,44 @@
 	#name {
 		color: #FFF;
 	}
+
+	.row {
+		padding: 20px;
+		font-size: 12px;
+	}
+
+	.row-icon {
+		font-size: 3em;
+	}
+
+	.rowTitle {
+		font-size: 3.5em;
+		font-weight: bold;
+		text-align: left;
+		padding-bottom: 2%;
+	}
+
+	.rowDate {
+		float: right;
+		font-size: 1.5em;
+		text-align: right;
+		font-weight: bold;
+	}
+
+	.rowSubTitle {
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 10%;
+		float: left;
+	}
+
+	.rowBody {
+		font-size: 1.5em;
+		text-align: left;
+		padding-left: 15%;
+		clear: both;
+	}
 </style>
 
 <html lang="en">
@@ -40,8 +84,7 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<title>Anish Chopra</title>
-    	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    	<link rel="stylesheet" href="http://anishchopra.github.io/font-awesome-4.2.0/css/font-awesome.min.css">
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   	</head>
 
 	<body>
@@ -69,14 +112,67 @@
     	<div class = "jumbotron jblue">
     		<div class = "container">
     			<h1 id = "name">Anish Chopra</h1>
-    			<div id="name"><h1><i class="fa fa-minus"></i></h1></div>
-    			<p class = "introduction">I am a hard-working individual who is passionate about technology and is determined to be at the cutting edge of innovation!</p>
+    			<p class = "introduction">1B Software Engineering</br>University of Waterloo</p>
     		</div>
     	</div>
 
     	<div class = "jumbotron jgreen">
-    		<div class = "container">
-    			<p>Test 2</p>
+			<div class = "row">
+				<div class="col-md-3 row-icon">
+					<i class = "fa fa-laptop fa-5x"></i>
+				</div>
+				<div class="col-md-9">
+					<div class="rowTitle">Work and Relevant Experience</div>
+					<div class="rowSubTitle">Web Development Intern, Edifecs Inc., Washington</div>
+					<div class="rowDate">May '14 - July '14</div>
+					<div class="rowBody">
+						<ul>
+							<li>Developed several sites for the company’s intranet, such as creating a company event portal where employees can register for different company events</li>
+							<li>Also worked on redesigning the homepage for the company's intranet</li>
+						</ul>
+					</div>
+					<div class="rowSubTitle">Web Developer, Globe Med Organization, University of Washington</div>
+					<div class="rowDate">Oct '14 - Nov '14</div>
+					<div class="rowBody">
+						<ul>
+							<li>Was recruited by the Globe Med organization at the University of Washington to build a new website for them where people can find out all the information they need about the organization</li>
+							<li>Handled most of the design process for the webiste</li>
+						</ul>
+					</div>
+					<div class="rowSubTitle">Genetics and Technology Program at Stanford University</div>
+					<div class="rowDate">July '13 to August '13</div>
+					<div class="rowBody">
+						<ul>
+							<li>Accepted into a competitive four-week genetics and technology summer program at Stanford University</li>
+							<li>Had the opportunity to learn how modern technology is applied in the field of genetics</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+    	</div>
+
+    	<div class="jumbotron jRowGray">
+    		<div class="row">
+    			<div class="col-md-9">
+    				<div class="rowTitle">Projects</div>
+    				<div class="rowSubTitle">iOS Equation Solver Application</div>
+    				<div class="rowBody">
+    					<ul>
+    						<li>Developed an iOS application that can a system of up to 6 equations</li>
+    						<li>Learned to code in Swift and work with UIKit</li>
+    					</ul>
+    				</div>
+    				<div class="rowSubTitle">iOS Falling Pigs Game</div>
+    				<div class="rowBody">
+    					<ul>
+    						<li>Learned how to code and develop my very own iOS application called ‘Falling Pigs’, a game that is currently available on the App Store</li>
+    						<li>Since then, I have donated all proceeds made from this application to charity</li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="col-md-3 row-icon">
+    				<i class="fa fa-code fa-5x"></i>
+    			</div>
     		</div>
     	</div>
 	</body>
