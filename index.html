@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 
-<style>
+<script src="http://anishchopra.github.io/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="http://anishchopra.github.io/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://anishchopra.github.io/dist/css/bootstrap-theme.min.css">
+<script src="http://anishchopra.github.io/dist/js/bootstrap.min.js"></script>
 
+
+<style>
+	.navbar-default {
+		margin-bottom: 0px !important;
+	}
+
+	.jblue {
+		background-color: #2C3E50;
+	}
+
+	.jgreen {
+		background-color: #18BC9C;
+	}
+
+	.jumbotron {
+		margin: 0px;
+		text-align: center;
+	}
+
+	.introduction {
+		font-size: 20em;
+		color: #FFF;
+	}
+
+	#name {
+		color: #FFF;
+	}
 </style>
 
 <html lang="en">
@@ -10,11 +40,8 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<title>Anish Chopra</title>
-
-		<script src="http://anishchopra.github.io/jquery-1.11.2.min.js"></script>
-		<link rel="stylesheet" href="http://anishchopra.github.io/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://anishchopra.github.io/dist/css/bootstrap-theme.min.css">
-		<script src="http://anishchopra.github.io/dist/js/bootstrap.min.js"></script>
+    	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    	<link rel="stylesheet" href="http://anishchopra.github.io/font-awesome-4.2.0/css/font-awesome.min.css">
   	</head>
 
 	<body>
@@ -39,9 +66,17 @@
       		</div>
     	</nav>
 
-    	<div class="container">
-    		<div class = "jumbotron">
-    			<p>Test</p>
+    	<div class = "jumbotron jblue">
+    		<div class = "container">
+    			<h1 id = "name">Anish Chopra</h1>
+    			<div id="name"><h1><i class="fa fa-minus"></i></h1></div>
+    			<p class = "introduction">I am a hard-working individual who is passionate about technology and is determined to be at the cutting edge of innovation!</p>
+    		</div>
+    	</div>
+
+    	<div class = "jumbotron jgreen">
+    		<div class = "container">
+    			<p>Test 2</p>
     		</div>
     	</div>
 	</body>
