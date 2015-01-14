@@ -1,0 +1,90 @@
+.navbar-default {
+	margin-bottom: 0px !important;
+}
+
+.jBlue {
+	background-color: #1B2F33;
+	color: #FFF;
+}
+
+.jGreen {
+	background-color: #47682C;
+	font-size: 12px;
+	color: #FFF;
+}
+
+.jLight {
+	background: linear-gradient(to left, #D8D8D8 , white); 
+	font-size: 12px;
+}
+
+.jumbotron {
+	margin: 0px;
+	text-align: center;
+}
+
+.introduction {
+	font-size: 20em;
+	color: #FFF;
+}
+
+#name {
+	color: #FFF;
+}
+
+.row {
+	padding: 20px;
+	font-size: 12px;
+}
+
+.row-icon {
+	font-size: 3em;
+}
+
+.rowTitle {
+	font-size: 3.5em;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.rowDate {
+	float: right;
+	font-size: 1.5em;
+	text-align: right;
+	font-weight: bold;
+}
+
+.rowSubTitle {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: left;
+	float: left;
+}
+
+.rowBody {
+	font-size: 1.5em;
+	text-align: left;
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.quals {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.social {
+	font-size: 8em;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+}
+
+.social:hover{
+	color: #365e66;
+}
