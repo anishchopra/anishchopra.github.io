@@ -1,0 +1,40 @@
+.navbar-default {
+	margin-bottom: 0px !important;
+}
+
+body {
+	background-color: #1B2F33;
+}
+
+.projectIcon {
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #47682C;
+	color: #000;
+	font-size: 8em;
+	font-weight: bold;
+	width: 300px;
+	padding: 70px 0px;
+	text-decoration: none !important;
+}
+
+.projectIcon:hover {
+	color: #d8d8d8 !important;
+	text-decoration: none !important;
+}
+
+.projectIcon:active, .projectIcon:visited {
+	color: #000;
+	text-decoration: none !important;
+}
+
+.projectRow {
+	text-align: center;
+	margin-top: 25%%;
+}
+
+.iconTitle {
+	color: #D8D8D8;
+	font-size: 2em;
+	margin-top: 15px;
+}
