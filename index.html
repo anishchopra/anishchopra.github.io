@@ -11,16 +11,18 @@
 		margin-bottom: 0px !important;
 	}
 
-	.jblue {
-		background-color: #2C3E50;
+	.jBlue {
+		background-color: #1B2F33;
+		color: #FFF;
 	}
 
-	.jgreen {
-		background-color: #18BC9C;
+	.jGreen {
+		background-color: #47682C;
 		font-size: 12px;
+		color: #FFF;
 	}
 
-	.jRowGray {
+	.jLight {
 		background: linear-gradient(to left, #D8D8D8 , white); 
 		font-size: 12px;
 	}
@@ -51,7 +53,7 @@
 	.rowTitle {
 		font-size: 3.5em;
 		font-weight: bold;
-		text-align: left;
+		text-align: center;
 		padding-bottom: 2%;
 	}
 
@@ -66,15 +68,21 @@
 		font-size: 1.5em;
 		font-weight: bold;
 		text-align: left;
-		padding-left: 10%;
 		float: left;
 	}
 
 	.rowBody {
 		font-size: 1.5em;
 		text-align: left;
-		padding-left: 15%;
 		clear: both;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+
+	.quals {
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
 	}
 </style>
 
@@ -109,72 +117,163 @@
       		</div>
     	</nav>
 
-    	<div class = "jumbotron jblue">
+    	<div class = "jumbotron jBlue">
     		<div class = "container">
     			<h1 id = "name">Anish Chopra</h1>
     			<p class = "introduction">1B Software Engineering</br>University of Waterloo</p>
     		</div>
     	</div>
 
-    	<div class = "jumbotron jgreen">
-			<div class = "row">
-				<div class="col-md-3 row-icon">
-					<i class = "fa fa-laptop fa-5x"></i>
-				</div>
-				<div class="col-md-9">
-					<div class="rowTitle">Work and Relevant Experience</div>
-					<div class="rowSubTitle">Web Development Intern, Edifecs Inc., Washington</div>
-					<div class="rowDate">May '14 - July '14</div>
-					<div class="rowBody">
-						<ul>
-							<li>Developed several sites for the company’s intranet, such as creating a company event portal where employees can register for different company events</li>
-							<li>Also worked on redesigning the homepage for the company's intranet</li>
-						</ul>
+    	<div class = "jumbotron jLight">
+    		<div class="container">
+				<div class='row-icon'><i class = "fa fa-check-circle fa-5x"></i></div>
+				<div class="rowTitle">Summary of Qualifications</div>
+				<div class = "row">
+					<div class="col-md-6">
+						<div class="quals">
+							<div class="rowSubTitle">Programming Languages</div>
+							<div class="rowBody">
+								<ul>
+									<li>C</li>
+									<li>C#</li>
+									<li>C++</li>
+									<li>Swift</li>
+									<li>Python</li>
+									<li>Javascript</li>
+									<li>Lua</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="rowSubTitle">Web Developer, Globe Med Organization, University of Washington</div>
-					<div class="rowDate">Oct '14 - Nov '14</div>
-					<div class="rowBody">
-						<ul>
-							<li>Was recruited by the Globe Med organization at the University of Washington to build a new website for them where people can find out all the information they need about the organization</li>
-							<li>Handled most of the design process for the webiste</li>
-						</ul>
-					</div>
-					<div class="rowSubTitle">Genetics and Technology Program at Stanford University</div>
-					<div class="rowDate">July '13 to August '13</div>
-					<div class="rowBody">
-						<ul>
-							<li>Accepted into a competitive four-week genetics and technology summer program at Stanford University</li>
-							<li>Had the opportunity to learn how modern technology is applied in the field of genetics</li>
-						</ul>
+
+					<div class = "col-md-6">
+						<div class = "quals">
+							<div class="rowSubTitle">Other</div>
+							<div class="rowBody">
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>jQuery</li>
+									<li>Bootstrap</li>
+									<li>Object-Oriented Programming</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
     	</div>
 
-    	<div class="jumbotron jRowGray">
-    		<div class="row">
-    			<div class="col-md-9">
-    				<div class="rowTitle">Projects</div>
-    				<div class="rowSubTitle">iOS Equation Solver Application</div>
-    				<div class="rowBody">
-    					<ul>
-    						<li>Developed an iOS application that can a system of up to 6 equations</li>
-    						<li>Learned to code in Swift and work with UIKit</li>
-    					</ul>
-    				</div>
-    				<div class="rowSubTitle">iOS Falling Pigs Game</div>
-    				<div class="rowBody">
-    					<ul>
-    						<li>Learned how to code and develop my very own iOS application called ‘Falling Pigs’, a game that is currently available on the App Store</li>
-    						<li>Since then, I have donated all proceeds made from this application to charity</li>
-    					</ul>
-    				</div>
-    			</div>
-
-    			<div class="col-md-3 row-icon">
-    				<i class="fa fa-code fa-5x"></i>
-    			</div>
-    		</div>
+    	<div class = "jumbotron jGreen">
+    		<div class="container">
+				<div class='row-icon'><i class = "fa fa-laptop fa-5x"></i></div>
+				<div class="rowTitle">Work and Relevant Experience</div>
+				<div class="rowSubTitle">Web Development Intern, Edifecs Inc., Washington</div>
+				<div class="rowDate">May '14 - July '14</div>
+				<div class="rowBody">
+					<ul>
+						<li>Developed several sites for the company’s intranet, such as creating a company event portal where employees can register for different company events</li>
+						<li>Also worked on redesigning the homepage for the company's intranet</li>
+					</ul>
+				</div>
+				<div class="rowSubTitle">Web Developer, Globe Med Organization, University of Washington</div>
+				<div class="rowDate">Oct '14 - Nov '14</div>
+				<div class="rowBody">
+					<ul>
+						<li>Was recruited by the Globe Med organization at the University of Washington to build a new website for them where people can find out all the information they need about the organization</li>
+						<li>Handled most of the design process for the webiste</li>
+					</ul>
+				</div>
+				<div class="rowSubTitle">Genetics and Technology Program at Stanford University</div>
+				<div class="rowDate">July '13 - Aug '13</div>
+				<div class="rowBody">
+					<ul>
+						<li>Accepted into a competitive four-week genetics and technology summer program at Stanford University</li>
+						<li>Had the opportunity to learn how modern technology is applied in the field of genetics</li>
+					</ul>
+				</div>
+			</div>
     	</div>
+
+    	<div class="jumbotron jLight">
+    		<div class="container">
+		    	<div class="row-icon"><i class="fa fa-code fa-5x"></i></div>
+				<div class="rowTitle">Projects</div>
+				<div class="rowSubTitle">iOS Equation Solver Application</div>
+				<div class="rowDate">Jan '14</div>
+				<div class="rowBody">
+					<ul>
+						<li>Developed an iOS application that can a system of up to 6 equations</li>
+						<li>Learned to code in Swift</li>
+						<li>Worked with scroll views, gesture recognizers, and several UIKit tools</li>
+					</ul>
+				</div>
+				<div class="rowSubTitle">iOS Falling Pigs Game</div>
+				<div class="rowDate">Jun '10 - Mar '11</div>
+				<div class="rowBody">
+					<ul>
+						<li>Learned how to code and develop my very own iOS application called ‘Falling Pigs’, a game that is currently available on the App Store</li>
+						<li>Since then, I have donated all proceeds made from this application to charity</li>
+					</ul>
+				</div>
+			</div>
+    	</div>
+
+    	<div class="jumbotron jGreen">
+    		<div class="container">
+		    	<div class="row-icon"><i class="fa fa-graduation-cap fa-5x"></i></div>
+				<div class="rowTitle">Education</div>
+				<div class="rowSubTitle">Candidate for Bachelor of Software Engineering, University of Waterloo</div>
+				<div class="rowDate">Sept '14 - Present</div>
+				<div class="rowBody">
+					<ul>
+						<li>Currently in my 1B term with a GPA of 3.90/4.00</li>
+						<li>Dean's List</li>
+					</ul>
+				</div>
+				<div class="rowSubTitle">Candidate for Bachelor of Computer Science, University of Toronto</div>
+				<div class="rowDate">Sept '13 - May '14</div>
+				<div class="rowBody">
+					<ul>
+						<li>Completed one year studying Computer Science before transferring to the University of Waterloo</li>
+						<li>Overall GPA of 3.89/4.00</li>
+					</ul>
+				</div>
+			</div>
+    	</div>
+
+    	<div class="jumbotron jLight">
+    		<div class="container">
+		    	<div class="row-icon"><i class="fa fa-paper-plane fa-5x"></i></div>
+				<div class="rowTitle">Extra-Curricular Experience</div>
+				<div class="rowSubTitle">Academic Representative of the Software Engineering Class of 2019</div>
+				<div class="rowDate">Sept '14 - Dec '14</div>
+				<div class="rowBody">
+					<ul>
+						<li>Elected to represent my class and address any academic concerns</li>
+						<li>Acted as a liaison between the class and the professors.</li>
+						<li>Attended several meetings with professors to discuss and resolve any class issues</li>
+					</ul>
+				</div>
+				<div class="rowSubTitle">Vice-President of the Marine Life Advocacy at the University of Toronto</div>
+				<div class="rowDate">Sept '13 - May '14</div>
+				<div class="rowBody">
+					<ul>
+						<li>Organized presentations promoting the protection of marine life around the world</li>
+						<li>Sent several letters to government officials explaining the importance of marine life protection</li>
+					</ul>
+				</div>
+				<div class="rowSubTitle">Certified and Avid Scuba Diver</div>
+				<div class="rowDate">July '13 - Present</div>
+				<div class="rowBody">
+					<ul>
+						<li>Certified as an advanced open water diver</li>
+						<li>Achieved several specialty certifications such as Deep Diver and Wreck Diver</li>
+					</ul>
+				</div>
+			</div>
+    	</div>
+
+
 	</body>
 </html>
