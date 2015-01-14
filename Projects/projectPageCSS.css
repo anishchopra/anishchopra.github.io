@@ -28,9 +28,15 @@ body {
 	text-decoration: none !important;
 }
 
+.title {
+  color: #D8D8D8;
+  font-size: 7em;
+  text-align: center;
+  margin-top: 2%;
+}
 .projectRow {
-	text-align: center;
-	margin-top: 25%%;
+  text-align: center;
+  margin-top: 15%;
 }
 
 .iconTitle {
