@@ -34,6 +34,7 @@ body {
   text-align: center;
   margin-top: 2%;
 }
+
 .projectRow {
   text-align: center;
   margin-top: 15%;
@@ -43,4 +44,13 @@ body {
 	color: #D8D8D8;
 	font-size: 2em;
 	margin-top: 15px;
+}
+
+.social {
+	font-size: 8em;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
 }

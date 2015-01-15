@@ -8,10 +8,46 @@
 body {
   background-color: #1B2F33;
 }
+
+.title {
+  color: #D8D8D8;
+  font-size: 7em;
+  margin-top: 2%;
+  margin-bottom: 20px;
+}
+
+.top {
+  text-align: center;
+}
+
+#prompt {
+  font-size: 2em;
+  color: #d8d8d8;
+  float: left;
+  margin-right: 10px;
+}
+
+#matrixButton {
+  background-color: #d8d8d8;
+  float: left;
+}
+
+#operationsInput {
+  display: inline-block;
+}
+
+#size {
+  background-color: #d8d8d8;
+  border: none;
+  float:left;
+}
+
 </style>
 
 <script>
+$(document).ready(function(){
 
+})
 </script>
 
 <html lang="en">
@@ -44,7 +80,15 @@ body {
       		</div>
     </nav>
 
+    <div class = "container top">
+      <div class='title'>Matrix Operations</div>
 
+      <div id="operationsInput">
+        <span id="prompt">Enter matrix size: </span>
+        <input type="text" id="size"></input>
+        <div id="matrixButton">Enter</div>
+      </div>
+    </div>
 
 
   </body>
