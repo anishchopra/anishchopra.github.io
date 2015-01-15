@@ -66,12 +66,12 @@ body {
 
 #matrixSpace {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .operationButtons {
   display: inline-block;
-  margin-top: 45px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -93,6 +93,12 @@ body {
 }
 
 #buttonSpace {
+  text-align: center;
+}
+
+#detResult {
+  color: #d8d8d8;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -136,12 +142,17 @@ function getMatrix(size) {
   }
   var counter = 0;
   $('.coefficient').each(function() {
+    var val = $(this).val();
+    if (val == "") {
+      $(this).val('0');
+    }
     var value = parseFloat($(this).val());
     if (isNaN(value)) {
-      return -1;
+      matrix = -1;
+      return;
     }
     
-    matrix[Math.floor(counter/size)][counter%size] = (value);
+    matrix[Math.floor(counter/size)][counter%size] = value;
     counter++;
   })
 
@@ -225,6 +236,7 @@ $(document).ready(function(){
   $("#matrixButton").click(function() {
     $('#matrix').remove(); // clear previous matrix, if any
     $('.operationButtons').remove();
+    $('#detResult').text("");
     $('#matrixSpace').append("<div id='matrix'></div>");
 
     var inputHTML = "<input type='text' class='coefficient'>";
@@ -261,10 +273,11 @@ $(document).ready(function(){
         return;
       }
       var det = determinant(matrix, size);
-      console.log(det);
+      $('#detResult').text("The determinant of this matrix is " + det.toString());
     })
 
     $('#transpose').click(function() {
+      $('#detResult').text("");
       var matrix = getMatrix(size);
       if (matrix == -1) {
         window.alert("Not a valid entry");
@@ -275,6 +288,7 @@ $(document).ready(function(){
     })
 
     $('#cofactor').click(function() {
+      $('#detResult').text("");
       var matrix = getMatrix(size);
       if (matrix == -1) {
         window.alert("Not a valid entry");
@@ -286,6 +300,7 @@ $(document).ready(function(){
     })
 
     $('#inverse').click(function() {
+      $('#detResult').text("");
       var matrix = getMatrix(size);
       if (matrix == -1) {
         window.alert("Not a valid entry");
@@ -328,7 +343,7 @@ $(document).ready(function(){
           			<div class="navbar-brand">Anish Chopra</div>
         		</div>
         		<div id="navbar" class="collapse navbar-collapse">
-          			<ul class="nav navbar-nav">
+          			<ul class="nav navbar-nav pull-right">
             			<li><a href="http://anishchopra.github.io">Home</a></li>
             			<li class="active"><a href="http://anishchopra.github.io/Projects">Projects</a></li>
           			</ul>
@@ -350,7 +365,7 @@ $(document).ready(function(){
       <div id='matrix'>
       </div>
     </div>
-
+    <div class = "container" id="detResult"></div>
     <div class = "container" id="buttonSpace">
     </div>
 
