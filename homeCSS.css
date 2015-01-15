@@ -4,13 +4,13 @@
 
 .jBlue {
 	background-color: #1B2F33;
-	color: #FFF;
+	color: #D8D8D8;
 }
 
 .jGreen {
 	background-color: #47682C;
 	font-size: 12px;
-	color: #FFF;
+	color: #D8D8D8;
 }
 
 .jLight {
@@ -25,11 +25,11 @@
 
 .introduction {
 	font-size: 20em;
-	color: #FFF;
+	color: #D8D8D8;
 }
 
 #name {
-	color: #FFF;
+	color: #D8D8D8;
 }
 
 .row {
@@ -81,7 +81,7 @@
 	margin-left: 5%;
 	margin-right: 5%;
 	text-decoration: none;
-	color: #FFF;
+	color: #D8D8D8;
 	display: inline-block;
 }
 
