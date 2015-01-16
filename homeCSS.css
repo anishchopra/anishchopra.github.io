@@ -88,3 +88,7 @@
 .social:hover{
 	color: #365e66;
 }
+
+#projectsLink, #projectsLink:active, #projectsLink:visited, #projectsLink:hover {
+	text-decoration: none;
+}
