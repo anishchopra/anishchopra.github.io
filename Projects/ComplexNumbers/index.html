@@ -4,14 +4,15 @@
 <link rel="stylesheet" href="http://anishchopra.github.io/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://anishchopra.github.io/dist/css/bootstrap-theme.min.css">
 <script src="http://anishchopra.github.io/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="http://anishchopra.github.io/Projects/projectPageCSS.css">
+<link rel="stylesheet" href="http://anishchopra.github.io/Projects/ComplexNumbers/complexNumbersCSS.css">
+<script src="http://anishchopra.github.io/Projects/ComplexNumbers/complexNumbers.js"></script>
 
 <html lang="en">
   	<head>
     	<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Projects</title>
+    	<title>Complex Number Arithmetic</title>
     	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   	</head>
 
@@ -36,22 +37,27 @@
       		</div>
     </nav>
 
-    <div class = "container icons">
-      <div class = "title">Projects</div>
-      <div class = "row projectRow">
-        <div class = "col-md-4">
-          <a href="http://anishchopra.github.io/Projects/MatrixOperations/" class = "projectIcon"><i class="fa fa-pencil"></i></a>
-          <div class = "iconTitle">Matrix Operations</div>
-        </div>
-        <div class = "col-md-4">
-          <a href="#" class = "projectIcon"><i class="fa fa-info"></i></a>
-          <div class = "iconTitle">Complex Number Arithmetic</div>
-        </div>
-        <div class = "col-md-4">
-          <a href="#" class = "projectIcon"><i class="fa fa-question"></i></a>
-          <div class = "iconTitle">Coming Soon...</div>
-        </div>
+    <div class='container complex'>
+      <div class='title'>Complex Number Arithmetic</div>
+      <div class='inputContainer'>
+        <span class='complexTitle'>Complex Number 1</span>
+        <input type='text' class='complexInput' id='real1' placeholder='Real Part'></input><span class='complexTitle plus'>+</span>
+        <input type='text' class='complexInput' id='complex1' placeholder='Imaginary Part'></input><span class='complexTitle i'>i</span>
       </div>
+      <div class='inputContainer'>
+        <span class='complexTitle prompt'>Complex Number 2</span>
+        <input type='text' class='complexInput' id='real2' placeholder='Real Part'></input><span class='complexTitle plus'>+</span>
+        <input type='text' class='complexInput' id='complex2' placeholder='Imaginary Part'></input><span class='complexTitle i'>i</span>
+      </div>
+
+      <div class='arithmeticButtons'>
+        <div class='arithmeticButton' id='add'>Addition</div>
+        <div class='arithmeticButton' id='subtract'>Subraction</div>
+        <div class='arithmeticButton' id='multiply'>Multiplication</div>
+        <div class='arithmeticButton' id='divide'>Division</div>
+      </div>
+
+      <div class='complexTitle' id='result'></div>
     </div>
 
 

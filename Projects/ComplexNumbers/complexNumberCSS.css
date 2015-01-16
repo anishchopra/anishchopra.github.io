@@ -1,0 +1,71 @@
+body {
+  background-color: #1B2F33;
+}
+
+.title {
+  color: #D8D8D8;
+  font-size: 6em;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.complex {
+  text-align: center;
+}
+
+.complexTitle {
+  color: #d8d8d8;
+  margin-right: 10px;
+  font-size: 2em;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.complexInput {
+  height: 50px;
+  background-color: #d8d8d8;
+  font-size: 1.5em;
+  border: none;
+  padding-left: 15px;
+  max-width: 200px;
+}
+
+.inputContainer {
+  margin-top: 50px;
+}
+
+.arithmeticButtons {
+  display: inline-block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.arithmeticButton {
+  float: left;
+  padding: 10px 20px;
+  margin-right: 20px;
+  background-color: #47682C;
+  color: #000;
+  cursor: pointer;
+}
+
+.arithmeticButton:last {
+  margin-right: none;
+}
+
+.arithmeticButton:hover {
+  color: #D8D8D8;
+}
+
+.plus {
+  margin: 0px 10px;
+}
+
+.i {
+  margin-left: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
