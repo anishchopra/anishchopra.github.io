@@ -79,6 +79,7 @@
 @media (max-width: 991px) {
 	.qualifications {
 		text-align: left;
+		padding-left: 20%;
 	}
 }
 
