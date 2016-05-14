@@ -13,8 +13,8 @@
 	color: #D8D8D8;
 }
 
-.jGreen a:link,a:visited {
-	color: blue;
+.jGreen.jumbotron a:link,a:visited {
+	color: #848484;
 	text-decoration: none;
 }
 
