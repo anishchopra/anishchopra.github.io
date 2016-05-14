@@ -14,7 +14,8 @@
 }
 
 .jGreen a:link,a:visited {
-	color: #333333;
+	color: blue;
+	text-decoration: none;
 }
 
 .jLight {
